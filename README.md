@@ -23,7 +23,7 @@
     
 <img width="609" alt="image" src="https://user-images.githubusercontent.com/45378000/168385773-dc3a1014-2333-478b-8f7b-d243226a295f.png">
 
-## Hot Flow (no consuming - still emitting, more than 1 consumer, No LifecycleAware/LifecycleAware)
+## Hot Flow (no consuming - still emitting, more than 1 consumer, no LifecycleAware/LifecycleAware)
 
 - State Flow (show last state only)
 - Shared Flow (able to show a number of last values)
