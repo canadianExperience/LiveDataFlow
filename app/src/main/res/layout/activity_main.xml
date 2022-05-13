@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvLiveData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/liveDataBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Live Data" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvFlow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/flowBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="Cold Flow Starts With Activity" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvStateFlow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/stateFlowBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="State Flow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvSharedFlow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"/>
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/sharedFlowBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="From cold Flow To Shared Flow" />
+
+    </LinearLayout>
+</LinearLayout>
