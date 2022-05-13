@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
             viewModel.populateStateFlow()
         }
 
-        observeTvLiveData(binding)
-//        collectColdFlow(binding)
+//        observeTvLiveData(binding)
+        collectColdFlow(binding)
 //        collectStateFlow(binding)
- //       collectSharedFlow(binding)
+//        collectSharedFlow(binding)
     }
 
     private fun observeTvLiveData(binding: ActivityMainBinding) {
@@ -147,3 +147,4 @@ class MainActivity : AppCompatActivity() {
 //      StateFlow - does not show repeated value, show latest value
 //      SharedFlow - shows repeated value, show more than latest value by using replay
 
+//      https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda
