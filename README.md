@@ -20,18 +20,10 @@
 <img width="610" alt="image" src="https://user-images.githubusercontent.com/45378000/168384650-8540a682-0f8f-4163-854e-f0a6d9844e4a.png">
 
 - LifecycleAware
-
-  private fun collectColdFlow(binding: ActivityMainBinding) {
-        this.lifecycleScope.launch {
-           // .launchWhenStarted {
-            repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.coldFlow.collect {
-                    binding.tvFlow.text = it
-                    Log.d(TAG, "cold flow consumed: $it")
-                }
-            }
-        }
-    }
     
 <img width="609" alt="image" src="https://user-images.githubusercontent.com/45378000/168385773-dc3a1014-2333-478b-8f7b-d243226a295f.png">
 
+## Hot Flow (no consuming - still emitting, more than 1 consumer, No LifecycleAware/LifecycleAware)
+
+- State Flow (show last state only)
+- Shared Flow (able to show a number of last values)
